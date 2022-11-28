@@ -20,7 +20,7 @@ body {
     color: white;
 }
 
-header .container {
+header .containerr {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -86,11 +86,11 @@ header nav a:hover {
     margin-right: 5px;
 }
 
-.container {
+.containerr {
     margin-left: 20px;
 }
 
-.filme-principal .container {
+.filme-principal .containerr {
     width: 70%;
 }
 
@@ -102,4 +102,28 @@ header nav a:hover {
 
 .carousel-filmes {
     margin-top: 5px;
+}
+
+dialog::backdrop {
+    background-color: black;
+}
+
+.modal {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+
+    .modal:before {
+        display: inline-block;
+        vertical-align: middle;
+        content: " ";
+        height: 100%;
+    }
+}
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
 }

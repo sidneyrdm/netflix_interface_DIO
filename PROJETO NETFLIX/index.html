@@ -21,7 +21,7 @@
 
 <body>
     <header>
-        <div class="container">
+        <div class="containerr">
             <h2 class="logo">NETFLIX</h2>
             <nav>
                 <a href="#">Inicio</a>
@@ -33,16 +33,17 @@
     </header>
     <main>
         <div class="filme-principal">
-            <div class="container">
+            <div class="containerr">
                 <h3 class="title">AVA</h3>
                 <p class="sinopse">
-                    Atormentada por dúvidas, uma assassina de elite luta para proteger a si mesma e a sua família depois que uma missão dá errado.
+                    Atormentada por dúvidas, uma assassina de elite luta para proteger a si mesma e a sua família depois
+                    que uma missão dá errado.
                 </p>
 
                 <div class="buttons">
-                    <button role="button" class="button">
+                    <button type="button" class="button" data-toggle="modal" data-target="#ModalAVA" >
                         <i class="fas fa-play"></i>
-                        ASSISTIR AGORA                        
+                        ASSISTIR AGORA
                     </button>
                     <button role="button" class="button">
                         <i class="fas fa-info-circle"></i>
@@ -56,50 +57,93 @@
     <div class="carousel-filmes">
         <div class="owl-carousel owl-theme">
             <div class="item">
-                <img class="box-filme" src="https://www.themoviedb.org/t/p/w440_and_h660_face/e2rzzyY2qNJNGE0jhBkTFTjiFpm.jpg" alt="">
+                <img class="box-filme"
+                    src="https://www.themoviedb.org/t/p/w440_and_h660_face/e2rzzyY2qNJNGE0jhBkTFTjiFpm.jpg" alt="">
             </div>
 
             <div class="item">
-                <img class="box-filme" src="https://www.themoviedb.org/t/p/w440_and_h660_face/yXrb84zJidCefyhTWHwo4yCDvwz.jpg" alt="">
+                <img class="box-filme"
+                    src="https://www.themoviedb.org/t/p/w440_and_h660_face/yXrb84zJidCefyhTWHwo4yCDvwz.jpg" alt="">
             </div>
 
             <div class="item">
-                <img class="box-filme" src="https://www.themoviedb.org/t/p/w440_and_h660_face/6KErczPBROQty7QoIsaa6wJYXZi.jpg" alt="">
+                <img class="box-filme"
+                    src="https://www.themoviedb.org/t/p/w440_and_h660_face/6KErczPBROQty7QoIsaa6wJYXZi.jpg" alt="">
+
             </div>
 
             <div class="item">
-                <img class="box-filme" src="https://www.themoviedb.org/t/p/w440_and_h660_face/2QhhILPAv7MKFd1q57ssQeEV2su.jpg" alt="">
+                <img class="box-filme"
+                    src="https://www.themoviedb.org/t/p/w440_and_h660_face/2QhhILPAv7MKFd1q57ssQeEV2su.jpg" alt="">
             </div>
 
             <div class="item">
-                <img class="box-filme" src="https://www.themoviedb.org/t/p/w440_and_h660_face/gw5WSquF8joM6lcP2KNoMDXJ2Z3.jpg" alt="">
+                <img class="box-filme"
+                    src="https://www.themoviedb.org/t/p/w440_and_h660_face/gw5WSquF8joM6lcP2KNoMDXJ2Z3.jpg" alt="">
             </div>
 
             <div class="item">
-                <img class="box-filme" src="https://www.themoviedb.org/t/p/w440_and_h660_face/7poSpsfrnhxjVN2uRmemd76ASvS.jpg" alt="">
+                <img class="box-filme"
+                    src="https://www.themoviedb.org/t/p/w440_and_h660_face/7poSpsfrnhxjVN2uRmemd76ASvS.jpg" alt="">
             </div>
 
-            <div class="item"><img class="box-filme" src="https://www.themoviedb.org/t/p/w440_and_h660_face/4ep2AOWNbVeS0EKLpOBKcIZ8hZS.jpg" alt=""></div>
-
-            <div class="item">
-                <img class="box-filme" src="https://www.themoviedb.org/t/p/w440_and_h660_face/oOiqpWM5id30m7Z5Zuo5cJlwKfV.jpg" alt="">
-            </div>
-
-            <div class="item">
-                <img class="box-filme" src="https://www.themoviedb.org/t/p/w440_and_h660_face/zSHd6o4SJngqgyqSr6eFM0lf43S.jpg" alt="">
+            <div class="item"><img class="box-filme"
+                    src="https://www.themoviedb.org/t/p/w440_and_h660_face/4ep2AOWNbVeS0EKLpOBKcIZ8hZS.jpg" alt="">
             </div>
 
             <div class="item">
-                <img class="box-filme" src="https://www.themoviedb.org/t/p/w440_and_h660_face/eiUnQ2YXcxSGdCLrN8tQEhLirZq.jpg" alt="">
+                <img class="box-filme"
+                    src="https://www.themoviedb.org/t/p/w440_and_h660_face/oOiqpWM5id30m7Z5Zuo5cJlwKfV.jpg" alt="">
+            </div>
+
+            <div class="item">
+                <img class="box-filme"
+                    src="https://www.themoviedb.org/t/p/w440_and_h660_face/zSHd6o4SJngqgyqSr6eFM0lf43S.jpg" alt="">
+            </div>
+
+            <div class="item">
+                <img class="box-filme"
+                    src="https://www.themoviedb.org/t/p/w440_and_h660_face/eiUnQ2YXcxSGdCLrN8tQEhLirZq.jpg" alt="">
             </div>
 
         </div>
     </div>
 
+    <dialog id="avaDialog">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Mot5ovqTPXo" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        <button role="button" class="button" id="avaClose">
+            FECHAR
+        </button>
+    </dialog>
+
+    <!-- Modal -->
+    <div class="modal fade" id="ModalAVA" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Mot5ovqTPXo"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
     <script src="https://kit.fontawesome.com/4300b4af50.js" crossorigin="anonymous"></script>
     <script src="js/owl/jquery.min.js"></script>
     <script src="js/owl/owl.carousel.min.js"></script>
     <script src="js/owl/setup.js"></script>
+    <script src="main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
 
 
 </body>
